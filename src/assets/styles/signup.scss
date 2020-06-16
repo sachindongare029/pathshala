@@ -1,4 +1,45 @@
-#banner {
+body {
+	background: rgb(255, 253, 255);
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pathshala__signup {
+	.signup__header {
+		width: 100%;
+		margin: 0px;
+		position: relative;
+		top: 0px;
+		.signup__title {
+			background: #f5f5f500;
+			color: #ffa456;
+			text-align: left;
+			margin: 1% 0% 0% 2%;
+			label {
+				left: 50%;
+				top: 2%;
+				letter-spacing: 1px;
+				display: inline;
+				font-family: "Niconne";
+				color: #26c2ef;
+				letter-spacing: 1px;
+				font-size: xx-large;
+				span {
+					font: bold 140% "Niconne", sans-serif;
+					letter-spacing: 1px;
+				}
+			}
+			.desc {
+				font: normal 100% "Ubuntu";
+				letter-spacing: 0px;
+				color: lightgreen;
+			}
+		}
+	}
+}
+
+.banner {
 	position: absolute;
 	top: 0px;
 	right: 0px;
@@ -29,7 +70,7 @@
  css for mobile
 */
 @media only screen and (min-device-width: 320px) {
-	#banner {
+	.banner {
 		position: relative;
 		margin-top: 3%;
 		margin-bottom: 0px;
@@ -62,7 +103,7 @@
 
 /*for desktop*/
 @media (min-device-width: 961px) {
-	#banner {
+	.banner {
 		position: absolute;
 		top: 10%;
 		right: 0px;
@@ -80,39 +121,8 @@
 	}
 }
 
-body {
-	background: rgb(255, 253, 255);
-	background: #ffffff;
-}
-
 .header-wrapper {
 	height: 50px;
-}
-.header {
-	width: 100%;
-	margin: 0px;
-	position: relative;
-	top: 0px;
-}
-.header #title {
-	background: #f5f5f500;
-	color: #ffa456;
-	text-align: center;
-}
-.header #title label {
-	position: absolute;
-	left: 50%;
-	top: 2%;
-	font: normal 30px "Pattaya", sans-serif;
-	letter-spacing: 1px;
-}
-.header #title label span {
-	font: bold 140% "Pattaya", sans-serif;
-	letter-spacing: 1px;
-}
-.header #title .desc {
-	font: normal 100% "Ubuntu";
-	letter-spacing: 0px;
 }
 
 .body {
@@ -120,10 +130,6 @@ body {
 	margin-top: 10px;
 	padding: 1%;
 	box-sizing: border-box;
-}
-body {
-	padding: 0px;
-	margin: 0px;
 }
 
 .footer {
@@ -1048,7 +1054,7 @@ cards .button.warning,
 		src: url("../fonts/Niconne-Regular.ttf");
 	}
 
-	.header #title label {
+	.signup__header #title label {
 		position: initial;
 		text-align: left;
 		font-family: "Niconne";
@@ -1056,7 +1062,7 @@ cards .button.warning,
 		/*color:#ffbd64;*/
 		letter-spacing: 1px;
 	}
-	.header #title .desc {
+	.signup__header #title .desc {
 		position: initial;
 		text-align: left;
 		font-family: "Niconne";
@@ -1064,26 +1070,21 @@ cards .button.warning,
 		/*color:#ffbd64;*/
 		letter-spacing: 1px;
 	}
-
-	.header #title {
-		text-align: left !important;
-		margin: 1% 0% 0% 2%;
-	}
 	.body {
 		padding: 0px !important;
 		margin: 0px !important;
 		width: 100%;
 	}
 
-	.header #title label span {
+	.signup__header #title label span {
 		font-family: "Niconne";
 	}
 
-	.header .options button + button {
+	.signup__header .options button + button {
 		margin-left: 5px;
 	}
 
-	.header .options {
+	.signup__header .options {
 		margin-right: 5px;
 	}
 
@@ -1098,22 +1099,22 @@ cards .button.warning,
 	border: none;
 	box-shadow: none;
 }
-@media (min-device-width: 961px) {
-	.header #title label {
-		display: inline;
-		font-family: "Niconne";
-		color: #fcfeff;
-		color: #26c2ef;
-		letter-spacing: 1px;
-		font-size: xx-large;
-	}
-	.header #title .desc {
-		font: normal 100% "Ubuntu";
-		letter-spacing: 0px;
-		color: lightgreen;
-	}
+// @media (min-device-width: 961px) {
+// 	.signup__header #title label {
+// 		display: inline;
+// 		font-family: "Niconne";
+// 		color: #fcfeff;
+// 		color: #26c2ef;
+// 		letter-spacing: 1px;
+// 		font-size: xx-large;
+// 	}
+// 	.signup__header #title .desc {
+// 		font: normal 100% "Ubuntu";
+// 		letter-spacing: 0px;
+// 		color: lightgreen;
+// 	}
 
-	body > .footer {
-		display: grid;
-	}
-}
+// 	body > .footer {
+// 		display: grid;
+// 	}
+// }

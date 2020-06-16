@@ -6,8 +6,8 @@ class SignUp extends Component {
   render() {
     return (
       <div className="pathshala__signup">
-        <div className="header">
-          <div id="title" nav="/">
+        <div className="signup__header">
+          <div className="signup__title" nav="/">
             <label className="title">
               {" "}
               <span>P</span>athshala{" "}
@@ -15,7 +15,7 @@ class SignUp extends Component {
             <label className="desc"> | Let's learn digitally </label>
           </div>
         </div>
-        <img id="banner" src="/images/banner5.jpg" alt="banner" />
+        <img className="banner" src="/images/banner5.jpg" alt="banner" />
         <div className="body">
           <div className="form water">
             <div className="form-header">
