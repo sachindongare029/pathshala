@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
-import '../styles/home.scss';
 
 class Home extends React.Component {
   render() {

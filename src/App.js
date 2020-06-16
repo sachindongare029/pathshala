@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./routes";
+import "./assets/styles/fontLoader.scss";
 
 function App() {
   return (
