@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../../assets/styles/signup.scss";
 import "../../assets/styles/icons.css";
 
@@ -16,8 +17,8 @@ class SignUp extends Component {
           </div>
         </div>
         <img className="banner" src="/images/banner5.jpg" alt="banner" />
-        <div className="body">
-          <div className="form water">
+        <div className="signup__body">
+          <div className="form">
             <div className="form-header">
               <div className="title"> Student Signup </div>
             </div>
@@ -89,16 +90,24 @@ class SignUp extends Component {
             <div className="form-footer center">
               <div className="element">
                 <div className="control">
-                  <input type="submit" value="Signup" className="button green" />
+                <Link to="/dashboard">
+                  <input
+                    type="submit"
+                    value="Signup"
+                    className="button green"
+                  />
+                </Link>
                 </div>
               </div>
               <div className="element">
                 <div className="control" id="login-link">
-                  <input
-                    type="submit"
-                    value="Already have account? Login now."
-                    className="link"
-                  />
+                  <Link to="/login">
+                    <input
+                      type="submit"
+                      value="Already have account? Login now."
+                      className="link"
+                    />{" "}
+                  </Link>
                 </div>
               </div>
             </div>
