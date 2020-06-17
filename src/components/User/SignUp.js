@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Header from './Header';
 import "../../assets/styles/signup.scss";
 import "../../assets/styles/icons.css";
 
@@ -7,15 +8,7 @@ class SignUp extends Component {
   render() {
     return (
       <div className="pathshala__signup">
-        <div className="signup__header">
-          <div className="signup__title" nav="/">
-            <label className="title">
-              {" "}
-              <span>P</span>athshala{" "}
-            </label>
-            <label className="desc"> | Let's learn digitally </label>
-          </div>
-        </div>
+        <Header />
         <img className="banner" src="/images/banner5.jpg" alt="banner" />
         <div className="signup__body">
           <div className="form">

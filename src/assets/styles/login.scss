@@ -1,0 +1,112 @@
+.pathshala__login {
+	.login__banner {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 50%;
+		z-index: -1;
+		margin-top: 3% !important;
+		margin-bottom: 0px;
+		margin-left: 24%;
+		display: block;
+		margin-right: 45%;
+		img {
+			height: 100vh;
+		}
+	}
+	.login__body {
+		background: #ffffff00;
+		box-sizing: border-box;
+		.form {
+			width: min-content;
+			background-color: #ffffff00;
+			margin-left: 70%;
+			margin-top: 40px;
+			margin-bottom: 10px;
+			background-color: #ffffff00;
+			font: normal 100% "Ubuntu", sans-serif;
+			.form-header {
+				text-align: center;
+				.title {
+					margin-top: 5px;
+					color: #26c2ef;
+					font: bold 150% "Ubuntu", sans-serif;
+				}
+				.desc {
+					font: normal 110% "Ubuntu";
+					text-align: center;
+					padding: 10px;
+					color: gray;
+					margin: 15px 10px 15px 10px;
+					color: gray;
+					margin: 10px 15px 10px 15px;
+				}
+			}
+			.form-body {
+				margin-top: 2px;
+				width: max-content;
+				padding: 5px 5px 5px 5px;
+				.element {
+					margin-top: 10px;
+					color: #7e98a0;
+					.control {
+						position: relative;
+						.holder {
+							position: absolute;
+							top: 2px;
+							left: 2px;
+							display: inline-block;
+							width: 43px;
+							height: 31px;
+							background-color: #03a9f400;
+							padding: 5px;
+							padding-left: 15px;
+							border-top-left-radius: 50px;
+							border-bottom-left-radius: 50px;
+							border-right: 2px solid #aebbc1;
+						}
+						input {
+							padding-left: 48px;
+							background: #f5f7f900;
+						}
+					}
+					.textbox {
+						width: 90%;
+						border: 2px solid #bfceda;
+						border-radius: 50px;
+						color: #8f99a5;
+						padding: 0%;
+						padding-left: 2%;
+						height: 35px;
+						font: normal 100% "Ubuntu", sans-serif;
+					}
+				}
+				.signup-link {
+					margin-top: 10%;
+					input {
+						background: #f5f7f900;
+					}
+				}
+				.forgot-pswd-link {
+					font: normal 90% "Ubuntu";
+					.link {
+						float: right;
+						margin-bottom: 5%;
+						margin-right: 28px;
+						padding-left: 6px !important;
+					}
+				}
+			}
+			.button {
+				width: 90% !important;
+				height: 34px;
+				border-radius: 50px !important;
+				font: bold 100% "Ubuntu" !important;
+				margin-top: 5% !important;
+			}
+			.form-footer {
+				width: fit-content;
+			}
+		}
+	}
+}
