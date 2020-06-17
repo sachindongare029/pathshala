@@ -1,13 +1,18 @@
 import React from "react";
-import { Route } from "react-router-dom";
-import Home from "./components/Home";
-import About from './components/About';
+import { Route, Redirect } from "react-router-dom";
+import Login from "./components/User/Login";
+import SignUp from './components/User/SignUp';
+import Dashboard from './components/Dashboard';
 
 const Routes = () => (
   <React.Fragment>
     <main className="main">
-      <Route exact path={"/"} component={Home} />
-      <Route exact path={"/about"} component={About} />
+      <Route exact path={"/"}>
+        <Redirect from="/" to="/signup"/>
+      </Route>
+      <Route exact path={"/signup"} component={SignUp} />
+      <Route exact path={"/login"} component={Login} />
+      <Route exact path={"/dashboard"} component={Dashboard} />
     </main>
   </React.Fragment>
 );
