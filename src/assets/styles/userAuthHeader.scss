@@ -1,0 +1,31 @@
+.pathshala__user-auth__header {
+  width: 100%;
+  margin: 0px;
+  position: relative;
+  top: 0px;
+  .signup__title {
+    background: #f5f5f500;
+    color: #ffa456;
+    text-align: left;
+    margin: 1% 0% 0% 2%;
+    label {
+      left: 50%;
+      top: 2%;
+      letter-spacing: 1px;
+      display: inline;
+      font-family: "Niconne";
+      color: #26c2ef;
+      letter-spacing: 1px;
+      font-size: xx-large;
+      span {
+        font: bold 140% "Niconne", sans-serif;
+        letter-spacing: 1px;
+      }
+    }
+    .desc {
+      font: normal 100% "Ubuntu";
+      letter-spacing: 0px;
+      color: lightgreen;
+    }
+  }
+}
